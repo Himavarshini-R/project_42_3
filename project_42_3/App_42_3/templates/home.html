@@ -1,44 +1,20 @@
 <!-- profile/templates/profile/home.html -->
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himavarshini's Personal Website</title>
-    <link rel="stylesheet" href="{% static 'App_42_3/styles.css' %}">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Himavarshini's Personal Website</h1>
-            <p class="profession">Student | BTech</p>
-        </div>
-    </header>
+{% extends 'base.html' %}
 
-    <section class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I'm Himavarshini Ramachandruni, a student passionate about technology and innovation. Welcome to my personal website where I share my projects, blog posts, and more about my journey.</p>
-    </section>
+{% block content %}
+<section class="about-me">
+    <h2>About Me</h2>
+    <p>Hello, I'm <strong>Hima Varshini</strong>, a passionate and motivated student pursuing a <strong>Bachelor's Degree in Artificial Intelligence and Data Science</strong>. I have a strong foundation in machine learning, data analytics, and AI algorithms, and I'm constantly working to expand my knowledge in these exciting fields.</p>
 
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Created an Expense tracker using Django.</li>
-            <li>Worked on Smart Blind Stick in IOT.</li>
-        </ul>
-    </section>
+    <p>Key areas of my expertise include:</p>
+    <ul>
+        <li><strong>Machine Learning:</strong> Supervised and Unsupervised Learning, Deep Learning, Neural Networks</li>
+        <li><strong>Programming Languages:</strong> Python, C, Java, SQL</li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Tableau, Power BI</li>
+        <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+    </ul>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <p>Email: himavarshini.ramachandruni@gmail.com</p>
-        <p>Phone: +91 9392707725</p>
-        <a href="https://github.com/Himavarshini-R" target="_blank">
-            My GitHub
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Himavarshini. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <p>As I continue my studies, I am actively seeking opportunities to apply my skills in real-world projects, internships, and research. I am especially interested in working on AI-powered solutions for healthcare, finance, and sustainable development. I am excited to collaborate with like-minded professionals and contribute to the advancement of technology through AI and data science.</p>
+</section>
+{% endblock %}
