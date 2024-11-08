@@ -1,0 +1,146 @@
+/* profile/static/profile/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #007bff;  /* Blue background for the navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Header Section */
+header {
+    background-color: #80bcd8;  /* Light blue */
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+header .profession {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Main Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px 10%;
+}
+
+/* Individual Section Styling */
+.about-me, .achievements, .contact, .projects {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
+    color: #00b3ff;  /* Light blue for section titles */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+ul li strong {
+    font-weight: 700;
+}
+
+/* Contact Form Section Styling */
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 12px;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section {
+        margin: 0 5%;
+    }
+}
